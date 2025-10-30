@@ -12,6 +12,13 @@
     steps:
      - name: first steps print
        run: echo " push is done !!!!!!!!!!  "
+
+     - name: checkout repository
+       uses: actions/checkout@v5.0.0
+
+     - name: see repository 
+       run: ls -al 
+    
        
          
         
