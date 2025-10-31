@@ -8,11 +8,11 @@ on:
    - "src/**"
    - "tests/**"
 
-pull_request:
-  branches:
+  pull_request:
+   branches:
       - main 
       - "release/**"
-  paths:
+   paths:
       - "src/**"
       - "tests/**"
 
@@ -21,7 +21,7 @@ jobs:
     runs-on : ubuntu-latest
     steps:
       - name: checkout code 
-        user: actions/checkout@v5.0.0
+        uses: actions/checkout@v5.0.0
 
       - name: run test 
         run: npm test
