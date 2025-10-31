@@ -1,0 +1,29 @@
+name : Push Pull Request
+on:
+ push:
+  branches:
+   - main 
+   - "release/**"
+  paths:
+   - "src/**"
+   - "tests/**"
+
+pull_request:
+  branches:
+      - main 
+      - "release/**"
+  paths:
+      - "src/**"
+      - "tests/**"
+
+jobs:
+  testingForMe:
+    runs-on : ubuntu-latest
+    steps:
+      - name: checkout code 
+        user: actions/checkout@v5.0.0
+
+      - name: run test 
+        run: npm test
+       
+
