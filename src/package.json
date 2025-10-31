@@ -1,0 +1,11 @@
+{
+  "name": "hello-fatima",
+  "version": "1.0.0",
+  "main": "src/hello.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
