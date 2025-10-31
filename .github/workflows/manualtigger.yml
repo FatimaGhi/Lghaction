@@ -1,0 +1,13 @@
+on:
+    workflow_dispatch:
+
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+        - name: test
+          run: echo "creat manual trigger is done !!!"
+
+
+   
+   
