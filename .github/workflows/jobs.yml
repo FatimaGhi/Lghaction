@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: job1_step1
-         run: "echo job {{github.job}}"
+         run: "echo job {{ github.job }}"
 
   job2:
     runs-on: ubuntu-latest
     needs: job1
     steps:
        - name: job2_step1
-         run: "echo job {{github.job}}"
+         run: "echo job {{ github.job }}"
 
   job3:
     runs-on: ubuntu-latest
@@ -21,7 +21,7 @@ jobs:
 
     steps:
        - name: job3_step1
-         run: "echo job {{github.job}}"
+         run: "echo job {{ github.job }}"
        
   job4:
     runs-on: ubuntu-latest
@@ -29,6 +29,6 @@ jobs:
 
     steps:
        - name: job3_step1
-         run: "echo job {{github.job}}"
+         run: "echo job {{ github.job }}"
    
       
